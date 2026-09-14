@@ -5,11 +5,12 @@
 ## 使用流程
 
 1. 設定主題、對象、年度與頁數。
-2. 填寫講師資料，上傳照片並選擇拱形、方框或圓形合成圖。
-3. 複製網站準備的製作指令，在使用者自己的 ChatGPT 帳號搜尋官方資料並生成內容，再將 JSON 結果匯入；也可直接貼上講稿編排。
-4. 逐頁選擇文字、圖文、比較表或流程圖版型，編輯內容與引用。
-5. 儲存草稿；日後由「開啟草稿」重新載入。可另存副本。
-6. 人工核對後匯出 PPTX。所有文字、表格及流程形狀保留可編輯性，照片和合成圖為影像。
+2. 到[第一波主題大綱](https://jimmyliao1019.github.io/rotary-first-wave-outlines/)選擇主題，下載該題 Markdown 講稿，將完整 8 頁內容貼入第 2 步並執行格式檢查。
+3. 填寫講師資料，上傳照片並選擇拱形、方框或圓形合成圖。
+4. 複製網站準備的製作指令，在使用者自己的 ChatGPT 帳號查核官方資料，將 8 頁大綱擴寫為設定的 15–20 頁，再把 JSON 結果匯入。
+5. 逐頁選擇文字、圖文、比較表或流程圖版型，編輯內容與引用。
+6. 儲存草稿；日後由「開啟草稿」重新載入。可另存副本。
+7. 人工核對後匯出 PPTX。所有文字、表格及流程形狀保留可編輯性，照片和合成圖為影像。
 
 ## 品牌
 
@@ -25,14 +26,13 @@ GitHub Pages 為靜態網站，沒有 Sites 登入與 R2。該版本使用瀏覽
 
 網站不需要也不接受共用的 `OPENAI_API_KEY`。文字研究與內容生成在訪客自己的 ChatGPT 工作階段完成，可用功能及用量依訪客的 ChatGPT 方案決定。
 
-目前採用可立即公開使用的銜接流程：網站依主題、對象、年度及頁數產生製作指令；訪客複製至 ChatGPT，完成官方資料搜尋後，把固定 JSON 格式貼回網站。網站驗證內容頁數、欄位長度及 `rotary.org`、`rid3510.org` 官方來源，再建立簡報。
+目前採用可立即公開使用的銜接流程：網站先驗證第一波講稿是否包含完整 8 頁，再把原稿、主題、對象、年度、頁數、品牌限制及版型要求組成製作指令。訪客複製至 ChatGPT，完成官方資料搜尋後，把固定 JSON 格式貼回網站。網站驗證內容頁數、欄位長度及 `rotary.org`、`rid3510.org` 官方來源，再建立簡報。
 
-網站同時註冊 WebMCP 工具，可讓支援 WebMCP 的 ChatGPT 或 Codex 讀取目前簡報需求、匯入結構化內容及檢查匯出前狀態。完整公開外掛仍需另外建立遠端 MCP Server、隱私權政策、服務條款與測試案例，再經 OpenAI 平台審查。
+網站同時註冊 WebMCP 工具，可讓支援 WebMCP 的 ChatGPT 或 Codex 讀取目前頁面已貼入的 8 頁大綱、匯入結構化內容及檢查匯出前狀態。依 [OpenAI Site tools 文件](https://learn.chatgpt.com/docs/webmcp)，使用者須在 ChatGPT 桌面版的內建瀏覽器開啟網站，且功能是否可用仍取決於版本、模型、工作區與推出狀態。
 
 官方文件：
 - https://learn.chatgpt.com/docs/sites
-- https://developers.openai.com/plugins/build/app-quickstart
-- https://developers.openai.com/plugins/deploy/submission
+- https://learn.chatgpt.com/docs/webmcp
 
 ## 維護
 
